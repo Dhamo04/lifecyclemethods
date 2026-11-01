@@ -27,16 +27,13 @@ Step 7: Save and run the application.
 
 ## PROGRAM:
 ```
-/*
-Program to print the text “Hello World”.
+
+Program to print the text “Welcome to Android studio”.
 Developed by: DHAMODHARAN S
 Registeration Number : 212225230049
-*/
-```
-### MainActivity.java
-```
 
-package com.example.lifecycleactivity;
+
+package com.example.test;
 
 import android.os.Bundle;
 import android.widget.Toast;
@@ -53,48 +50,48 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toast toast = Toast.makeText(getApplicationContext(), "onCreate Called", Toast.LENGTH_LONG);
-        toast.show();
+        Toast.makeText(getApplicationContext(), "onCentre Called", Toast.LENGTH_LONG).show();
     }
+
+    @Override
     protected void onStart() {
         super.onStart();
-        Toast toast = Toast.makeText(getApplicationContext(), "onStart Called", Toast.LENGTH_LONG);
-        toast.show();
+        Toast.makeText(getApplicationContext(), "onStart Called", Toast.LENGTH_LONG).show();
     }
+
     @Override
     protected void onRestart() {
         super.onRestart();
-        Toast toast = Toast.makeText(getApplicationContext(), "onRestart Called", Toast.LENGTH_LONG);
-        toast.show();
+        Toast.makeText(getApplicationContext(), "onRestart called", Toast.LENGTH_LONG).show();
     }
 
+    @Override
     protected void onPause() {
         super.onPause();
-        Toast toast = Toast.makeText(getApplicationContext(), "onPause Called", Toast.LENGTH_LONG);
-        toast.show();
+        Toast.makeText(getApplicationContext(), "onPause called", Toast.LENGTH_LONG).show();
     }
 
+    @Override
     protected void onResume() {
         super.onResume();
-        Toast toast = Toast.makeText(getApplicationContext(), "onResume Called", Toast.LENGTH_LONG);
-        toast.show();
+        Toast.makeText(getApplicationContext(), "onResume called", Toast.LENGTH_LONG).show();
     }
 
+    @Override
     protected void onStop() {
         super.onStop();
-        Toast toast = Toast.makeText(getApplicationContext(), "onStop Called", Toast.LENGTH_LONG);
-        toast.show();
+        Toast.makeText(getApplicationContext(), "onStop called", Toast.LENGTH_LONG).show();
     }
 
+    @Override
     protected void onDestroy() {
         super.onDestroy();
-        Toast toast = Toast.makeText(getApplicationContext(), "onDestroy Called", Toast.LENGTH_LONG);
-        toast.show();
+        Toast.makeText(getApplicationContext(), "onDestroy called", Toast.LENGTH_LONG).show();
     }
 }
-
 ```
-### activity_main.xml
+
+## Activity_main.xml 
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -106,55 +103,29 @@ public class MainActivity extends AppCompatActivity {
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to android studio"
-        android:textColor="#4BDC51"
-        android:textSize="30sp"
+        android:text="Welcome to Android studio"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:shadowColor="#B65B5B"
-        android:text="LIFE CYCLE ACTIVITY"
-        android:textColor="#11A6F6"
-        android:textColorLink="#BF2222"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="NADIN KRISHNASAMY B - 212225240095"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.331" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
 ```
+
 ## OUTPUT
 
+<img width="1919" height="1020" alt="Screenshot 2026-10-30 082913" src="https://github.com/user-attachments/assets/f0df31d6-523e-488d-89db-b8a759c9019e" />
 
-<img width="1917" height="1078" alt="Screenshot 2026-10-26 161324" src="https://github.com/user-attachments/assets/dfa3c15a-fd6f-40b7-b93b-9703897e9f2b" />
-<img width="1917" height="1078" alt="Screenshot 2026-10-26 161231" src="https://github.com/user-attachments/assets/6341f972-d32c-4e4c-8305-74e4f08610da" />
-<img width="1917" height="1078" alt="Screenshot 2026-10-26 161252" src="https://github.com/user-attachments/assets/8b1d80bd-b566-4b48-ac40-0683a32df366" />
-<img width="1917" height="1078" alt="Screenshot 2026-10-26 161238" src="https://github.com/user-attachments/assets/03e5dcd2-9a98-4f8b-b330-538084c50af5" />
-<img width="1917" height="1078" alt="Screenshot 2026-10-26 161320" src="https://github.com/user-attachments/assets/93a26773-885d-4fdf-b8d5-d36ba6dd74f8" />
+<img width="1919" height="1021" alt="Screenshot 2026-10-30 082950" src="https://github.com/user-attachments/assets/09a12367-3b96-46f6-bfc1-2908a399c03d" />
+
+<img width="1918" height="1020" alt="Screenshot 2026-10-30 083037" src="https://github.com/user-attachments/assets/892c5725-161c-4039-859e-1a9a3a0fd072" />
+
+<img width="1919" height="1024" alt="Screenshot 2026-10-30 083154" src="https://github.com/user-attachments/assets/014cd33f-c52f-4157-af12-f38fa238a0cd" />
+
+<img width="1919" height="1022" alt="Screenshot 2026-10-30 083104" src="https://github.com/user-attachments/assets/1e602dde-f947-454d-91d7-3c4dd50ca52b" />
 
 ## RESULT
 Thus a Simple Android Application create a HelloWorld Activity using all lifecycles methods to display messages using Android Studio is developed and executed successfully.
